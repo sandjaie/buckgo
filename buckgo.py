@@ -1,7 +1,11 @@
 import click
 import boto3
+import os
 
 actions = ['create', 'upload', 'delete', 'delete_all', 'delete_file', 'list_buckets', 'list_objects']
+
+os.environ['AWS_PROFILE'] = "pyuser"
+os.environ['AWS_DEFAULT_REGION'] = "ap-south-1"
 
 s3 = boto3.resource('s3')
 s3client = boto3.client('s3')
