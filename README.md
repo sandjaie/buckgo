@@ -2,7 +2,7 @@ This command line tool helps in basic CRUD process for S3 buckets
 
 How to install:
 
-```$ pip install .```
+```$ python setup.py install```
 
 Examples:
 
